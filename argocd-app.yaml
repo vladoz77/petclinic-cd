@@ -1,15 +1,21 @@
-project: default
-source:
-  repoURL: 'https://github.com/vladoz77/petclinic-cd.git'
-  path: manifest
-  targetRevision: HEAD
-  directory:
-    recurse: true
-    jsonnet: {}
-destination:
-  server: 'https://kubernetes.default.svc'
-  namespace: petclinic
-syncPolicy:
-  automated: {}
-  syncOptions:
-    - CreateNamespace=true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: petclinic
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/vladoz77/petclinic-cd.git'
+    path: manifest
+    targetRevision: HEAD
+    directory:
+      recurse: true
+      jsonnet: {}
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: petclinic
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
