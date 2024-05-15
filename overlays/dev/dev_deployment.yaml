@@ -4,8 +4,4 @@ metadata:
   name: petclinic-app
 spec:
   replicas: 1
-  template:
-    spec:
-      containers:
-        - image: vladoz77/petclinic:latest
-          name: petclinic
+
