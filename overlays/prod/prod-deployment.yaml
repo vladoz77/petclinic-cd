@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   name: petclinic-app
 spec:
-  replicas: 1
+  replicas: 3
   template:
     spec:
       containers:
-        - image: vladoz77/petclinic:latest
+        - image: vladoz77/petclinic:1.0.0-366
           name: petclinic

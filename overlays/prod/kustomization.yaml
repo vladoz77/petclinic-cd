@@ -3,10 +3,8 @@ kind: Kustomization
 resources:
   - ../../base
   - namespace.yaml
-namePrefix: dev-
-namespace: petclinic-dev
+namespace: petclinic
 patchesStrategicMerge:
-  - dev_deployment.yaml
-  
+  - prod-deployment.yaml
 commonLabels:
-  stage: dev
+  stage: prod
