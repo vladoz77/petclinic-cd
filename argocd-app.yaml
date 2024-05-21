@@ -3,15 +3,16 @@ kind: Application
 metadata:
   name: petclinic
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: 'https://github.com/vladoz77/petclinic-cd.git'
     path: manifest
-    targetRevision: HEAD
+    targetRevision: main
     directory:
       recurse: true
-      jsonnet: {}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: petclinic
