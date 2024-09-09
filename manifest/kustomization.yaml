@@ -8,3 +8,4 @@ images:
   newTag: 1.0.0-404
 - name: docker.io/vladoz77/petclinic
   newTag: latest
+
