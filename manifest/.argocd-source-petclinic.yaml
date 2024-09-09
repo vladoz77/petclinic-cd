@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - docker.io/vladoz77/petclinic:latest
