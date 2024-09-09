@@ -6,3 +6,5 @@ resources:
 images:
 - name: vladoz77/petclinic
   newTag: 1.0.0-406
+- name: docker.io/vladoz77/petclinic
+  newTag: latest
