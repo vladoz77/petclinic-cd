@@ -5,4 +5,4 @@ resources:
 - 02-petclinic-svc.yaml
 images:
 - name: vladoz77/petclinic
-  digest: sha256:57923c85fa06cbd5f6c9cda76f6eafd94acacb230a0a95d02c5df71466de1f7f
+  newTag: 1.0.0-414
