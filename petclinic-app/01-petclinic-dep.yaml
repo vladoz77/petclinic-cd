@@ -24,6 +24,9 @@ spec:
           # limits:
           #   memory: 500Mi
           #   cpu: 200m
+        imagePullSecrets:
+        - name: docker-secret
+
         readinessProbe:
           failureThreshold: 5
           httpGet:
