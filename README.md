@@ -6,7 +6,7 @@
 
 2. add docker secret to k8s
     ```bash
-    kubectl create secret generic regcred -n argocd \
-        --from-file=~/.dockerconfigjson=/home/${USER}docker/config.json \
-        --type=kubernetes.io/dockerconfigjson
+    kubectl create secret generic argocd-docker-secret -n argocd \
+    --from-file=.dockerconfigjson=.docker/config.json \ 
+    --type=kubernetes.io/dockerconfigjson
     ```
