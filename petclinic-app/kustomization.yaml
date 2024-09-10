@@ -5,4 +5,4 @@ resources:
 - 02-petclinic-svc.yaml
 images:
 - name: vladoz77/petclinic
-  newTag: 1.0.0-396
+  newTag: 1.0.0-398
