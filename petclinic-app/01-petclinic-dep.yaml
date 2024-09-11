@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
         - name: docker-secret
       containers:
-      - image: vladoz77/petclinic
+      - image: docker.home.local/petclinic
         name: petclinic
         resources: {} 
           # requests:
