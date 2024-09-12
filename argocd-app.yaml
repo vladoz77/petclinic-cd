@@ -7,7 +7,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd-image-updater.argoproj.io/image-list: petclinic-app=docker.home.local/petclinic
-    argocd-image-updater.argoproj.io/petclinic-app.update-strategy: newest-build
+    argocd-image-updater.argoproj.io/petclinic-app.update-strategy: latest
+    argocd-image-updater.argoproj.io/petclinic-app.ignore-tags: latest
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/write-back-target: kustomization
     argocd-image-updater.argoproj.io/git-branch: main 
