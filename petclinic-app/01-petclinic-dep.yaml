@@ -15,7 +15,7 @@ spec:
         app: petclinic-app
     spec:
       imagePullSecrets:
-        - name: docker-secret
+        - name: nexus-secret
       containers:
       - image: docker.home.local/petclinic
         name: petclinic
