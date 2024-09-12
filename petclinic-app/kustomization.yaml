@@ -7,4 +7,4 @@ images:
 - name: vladoz77/petclinic
   digest: sha256:a5b75aa78db116d7676023ac0c3113687effdc64745610e95de93e11248561c2
 - name: docker.home.local/petclinic
-  newTag: 1.0.0-426
+  newTag: latest
