@@ -5,4 +5,4 @@ resources:
 - 02-petclinic-svc.yaml
 images:
 - name: docker.home.local/petclinic
-  newTag: 1.0.0-432
+  newTag: 1.0.0-433
