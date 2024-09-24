@@ -6,4 +6,4 @@ resources:
 - 03-nexus-secret.yaml
 images:
 - name: docker.home.local/petclinic
-  newTag: 1.0.0-435
+  newTag: 1.0.0-436
