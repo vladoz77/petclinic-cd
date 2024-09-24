@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - 01-petclinic-dep.yaml
 - 02-petclinic-svc.yaml
+- 03-nexus-secret.yaml
 images:
 - name: docker.home.local/petclinic
   newTag: 1.0.0-435
