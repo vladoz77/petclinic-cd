@@ -7,3 +7,5 @@ resources:
 images:
 - name: docker.home.local/petclinic
   newTag: 1.0.0-436
+- name: reg.dev.local/registry/petclinic
+  newTag: 1.0.0-437
