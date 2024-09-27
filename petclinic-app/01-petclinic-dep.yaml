@@ -14,8 +14,8 @@ spec:
       labels:
         app: petclinic-app
     spec:
-      imagePullSecrets:
-        - name: nexus-secret
+      # imagePullSecrets:
+      #   - name: nexus-secret
       containers:
       - image: reg.dev.local/registry/petclinic
         name: petclinic
