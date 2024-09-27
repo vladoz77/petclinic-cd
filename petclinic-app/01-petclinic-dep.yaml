@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
         - name: nexus-secret
       containers:
-      - image: docker.home.local/petclinic
+      - image: reg.dev.local/registry/petclinic
         name: petclinic
         resources: {} 
           # requests:
