@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-image-updater.argoproj.io/image-list: petclinic-app=reg.dev.local/registry/petclinic
+    argocd-image-updater.argoproj.io/image-list: petclinic-app=registry.home-local.site/petclinic
     argocd-image-updater.argoproj.io/petclinic-app.update-strategy: latest
     argocd-image-updater.argoproj.io/petclinic-app.ignore-tags: latest
     argocd-image-updater.argoproj.io/write-back-method: git
