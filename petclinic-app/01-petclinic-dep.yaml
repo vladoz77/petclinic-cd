@@ -15,9 +15,9 @@ spec:
         app: petclinic-app
     spec:
       imagePullSecrets:
-        - name: harbor-secret
+        - name: nexus-secret
       containers:
-      - image: reg.dev.local/registry/petclinic
+      - image: registry.home-local.site/petclinic
         name: petclinic
         resources: {} 
           # requests:
